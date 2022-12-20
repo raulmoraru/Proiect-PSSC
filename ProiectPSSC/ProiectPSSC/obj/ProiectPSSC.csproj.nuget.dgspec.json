@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\raulg\\source\\repos\\ProiectPSSC\\ProiectPSSC\\ProiectPSSC.csproj": {}
+    "A:\\Desktop\\Faculta\\Faculta\\An 4\\PSSC\\Repo Clone\\Proiect-PSSC\\ProiectPSSC\\ProiectPSSC\\ProiectPSSC.csproj": {}
   },
   "projects": {
-    "C:\\Users\\raulg\\source\\repos\\ProiectPSSC\\ProiectPSSC\\ProiectPSSC.csproj": {
+    "A:\\Desktop\\Faculta\\Faculta\\An 4\\PSSC\\Repo Clone\\Proiect-PSSC\\ProiectPSSC\\ProiectPSSC\\ProiectPSSC.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\raulg\\source\\repos\\ProiectPSSC\\ProiectPSSC\\ProiectPSSC.csproj",
+        "projectUniqueName": "A:\\Desktop\\Faculta\\Faculta\\An 4\\PSSC\\Repo Clone\\Proiect-PSSC\\ProiectPSSC\\ProiectPSSC\\ProiectPSSC.csproj",
         "projectName": "ProiectPSSC",
-        "projectPath": "C:\\Users\\raulg\\source\\repos\\ProiectPSSC\\ProiectPSSC\\ProiectPSSC.csproj",
+        "projectPath": "A:\\Desktop\\Faculta\\Faculta\\An 4\\PSSC\\Repo Clone\\Proiect-PSSC\\ProiectPSSC\\ProiectPSSC\\ProiectPSSC.csproj",
         "packagesPath": "C:\\Users\\raulg\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\raulg\\source\\repos\\ProiectPSSC\\ProiectPSSC\\obj\\",
+        "outputPath": "A:\\Desktop\\Faculta\\Faculta\\An 4\\PSSC\\Repo Clone\\Proiect-PSSC\\ProiectPSSC\\ProiectPSSC\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\raulg\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -39,6 +39,12 @@
       "frameworks": {
         "net6.0": {
           "targetAlias": "net6.0",
+          "dependencies": {
+            "CSharp.Choices": {
+              "target": "Package",
+              "version": "[2.1.1, )"
+            }
+          },
           "imports": [
             "net461",
             "net462",
