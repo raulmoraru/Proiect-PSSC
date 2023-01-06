@@ -25,12 +25,6 @@ namespace ProiectPSSC
                 List<UnvalidatedOrder> OrdersList = new();
                 do
                 {
-                    /* var orderId = ReadSomething("ID of the order: ");
-                     if (string.IsNullOrEmpty(orderId))
-                     {
-                         break;
-                     }*/
-
                     var orderId = (++orderCounter).ToString();
                     var CustomerName = ReadSomething("Name of the customer: ");
                     if (string.IsNullOrEmpty(CustomerName))
