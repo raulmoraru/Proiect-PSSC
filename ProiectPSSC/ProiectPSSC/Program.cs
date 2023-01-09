@@ -10,7 +10,9 @@ namespace ProiectPSSC
 
         class Program
         {
-            private static int orderCounter=0;
+            private static int orderCounter = 0;
+            public int OrderID { get; set; }
+            public string Status { get; set; }
 
             static void Main(string[] args)
             {
@@ -52,7 +54,6 @@ namespace ProiectPSSC
                     {
                         break;
                     }
-
                 } while (true);
                 return OrdersList;
             }
@@ -81,6 +82,19 @@ namespace ProiectPSSC
                 }
                 return $"Unregistrated order";
             }
+            public void Cancel()
+            {
+                if (Status == "Processing")
+                {
+                    Status = "Cancelled";
+                    Console.WriteLine($"Order {OrderID} has been cancelled.");
+                }
+                else
+                {
+                    Console.WriteLine($"Order {OrderID} cannot be cancelled because it is in the {Status} status.");
+
+                }
+            }
         }
     }
-    }
+}
