@@ -7,7 +7,6 @@ namespace ProiectPSSC
 {
     public class OrderWorkflow
     {
-
         class Program
         {
                
@@ -17,7 +16,6 @@ namespace ProiectPSSC
 
             static void Main(string[] args)
             {
-                var workflow = new OrderWorkflow();
                 var OrdersList = ReadOrder().ToArray();
                 List<UnvalidatedOrder> OrderList_ = new List<UnvalidatedOrder>(OrdersList);
                 PrintOrders(OrderList_);
@@ -26,31 +24,30 @@ namespace ProiectPSSC
             private static List<UnvalidatedOrder> ReadOrder()
             {
                 OrderValidator validator = new OrderValidator();
-                OrderDetails order=new OrderDetails();
+
                 List<UnvalidatedOrder> OrdersList = new();
                 do
                 {
                     var orderId = (++orderCounter).ToString();
                     var CustomerName = ReadSomething("Name of the customer: ");
-                    if (string.IsNullOrEmpty(CustomerName))
-                    {
-                        Console.Error.WriteLine("The name of the item is required");
+                    if (!validator.ValidateString(CustomerName)) {
+                        Console.Error.WriteLine("The name of the customer is required");
                         break;
                     }
                     var ItemName = ReadSomething("Name of the item: ");
-                    if (string.IsNullOrEmpty(ItemName))
+                    if (!validator.ValidateString(ItemName))
                     {
                         Console.Error.WriteLine("The name of the item is required");
                         break;
                     }
                     var Quantity = ReadSomething("Item quantity: ");
-                    if (string.IsNullOrEmpty(Quantity))
+                    if (!validator.ValidateString(Quantity))
                     {
                         Console.Error.WriteLine("Item quantity is required");
                         break;
                     }
                     var Price = ReadSomething("Price of the item: ");
-                    if (string.IsNullOrEmpty(Price))
+                    if (!validator.ValidateString(Price))
                     {
                         Console.Error.WriteLine("Price is required");
                         break;

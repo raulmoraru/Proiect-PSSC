@@ -6,43 +6,29 @@ using System.Threading.Tasks;
 
 namespace ProiectPSSC.Domain.Models
 {
-    class OrderDetails
-    {
-        public string CustomerName { get; set; }
-        public string ItemName { get; set; }
-        public int Quantity { get; set; }
-        public int Price { get; set; }
-    }
     internal class OrderValidator
     {
-
-        public bool Validate(OrderDetails order)
+        public class OrderDetails
         {
-            if (string.IsNullOrEmpty(order.CustomerName))
+            public string CustomerName { get; set; }
+            public string ItemName { get; set; }
+            public int Quantity { get; set; }
+            public int Price { get; set; }
+        }
+        public bool ValidateString(string orderString)
+        {
+            if (string.IsNullOrEmpty(orderString))
             {
-                Console.WriteLine("Error: Customer name is required.");
                 return false;
             }
-
-            if (order.Price <= 0)
-            {
-                Console.WriteLine("Error: Price must be greater than zero.");
-                return false;
-            }
-
-            if (string.IsNullOrEmpty(order.ItemName))
-            {
-                Console.WriteLine("Error: Item name is required");
-                return false;
-            }
-
-            if (order.Quantity <= 0)
-            {
-                Console.WriteLine("Error: Quantity must be greater than zero.");
-                return false;
-            }
-
             return true;
         }
+        public bool ValidateInt(int orderInt) {
+            if (orderInt <= 0)
+            {
+                return false;
+            }
+            return true;
+        } 
     }
 }

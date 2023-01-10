@@ -8,12 +8,12 @@ namespace ProiectPSSC.Domain.Models
         public string Status { get; set; }
         public void ProcessOrder(string orderJson)
         {
-            OrderDetails order = JsonConvert.DeserializeObject<OrderDetails>(orderJson);
+            OrderValidator.OrderDetails order = JsonConvert.DeserializeObject<OrderValidator.OrderDetails>(orderJson);
             OrderValidator validator = new OrderValidator();
-            if (validator.Validate(order))
+            if (validator.ValidateString(order.CustomerName) && validator.ValidateInt(order.Price) && validator.ValidateInt(order.Quantity) && validator.ValidateString(order.ItemName))
             {
                 Status = "Processing";
-                 
+
                 Console.WriteLine("Order is valid and being processed");
             }
             else
