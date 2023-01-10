@@ -43,6 +43,10 @@
             "CSharp.Choices": {
               "target": "Package",
               "version": "[2.1.1, )"
+            },
+            "Microsoft.EntityFrameworkCore.SqlServer": {
+              "target": "Package",
+              "version": "[5.0.12, )"
             }
           },
           "imports": [
