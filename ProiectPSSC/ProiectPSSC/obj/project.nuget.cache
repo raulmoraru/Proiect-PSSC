@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "lyb7SyUBeoS7Wp0pw26SxDIiDWIzvGpfk4z4t8O4VEJmAN28zqlYWxdV/9F2DuqDTh2aGEUIkI0e5JCdAkd10A==",
+  "dgSpecHash": "m1+afmf0VxVD5xn5aCqJw3rgnB4u0n/Y7JQL2k+K3vgemEmHfAP9osU6TbxwCpcJls7hhle1ri6u/3+w8/bmuQ==",
   "success": true,
   "projectFilePath": "A:\\Desktop\\Faculta\\Faculta\\An 4\\PSSC\\Repo Clone\\Proiect-PSSC\\ProiectPSSC\\ProiectPSSC\\ProiectPSSC.csproj",
   "expectedPackageFiles": [
@@ -39,6 +39,7 @@
     "C:\\Users\\raulg\\.nuget\\packages\\microsoft.win32.systemevents\\4.7.0\\microsoft.win32.systemevents.4.7.0.nupkg.sha512",
     "C:\\Users\\raulg\\.nuget\\packages\\newtonsoft.json\\10.0.1\\newtonsoft.json.10.0.1.nupkg.sha512",
     "C:\\Users\\raulg\\.nuget\\packages\\runtime.native.system\\4.3.0\\runtime.native.system.4.3.0.nupkg.sha512",
+    "C:\\Users\\raulg\\.nuget\\packages\\sqlite\\3.13.0\\sqlite.3.13.0.nupkg.sha512",
     "C:\\Users\\raulg\\.nuget\\packages\\system.collections\\4.3.0\\system.collections.4.3.0.nupkg.sha512",
     "C:\\Users\\raulg\\.nuget\\packages\\system.collections.concurrent\\4.3.0\\system.collections.concurrent.4.3.0.nupkg.sha512",
     "C:\\Users\\raulg\\.nuget\\packages\\system.collections.immutable\\5.0.0\\system.collections.immutable.5.0.0.nupkg.sha512",
